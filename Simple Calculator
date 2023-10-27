@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    float a,b;
+    char operation;
+    
+    printf("Enter a Value:");
+    scanf("%f",&a);
+    printf("Enter b Value:");
+    scanf("%f",&b);
+    
+    printf("Enter a Operation (+,-,*,/,%%):");
+    scanf(" %c",&operation);
+    
+    switch(operation)
+    {
+        case '+':
+        printf("Addition is :%.2f",a+b);
+        break;
+        
+        case '-':
+        printf("Subtraction is :%.2f",a-b);
+        break;
+        
+        case '*':
+        printf("Multiplication is :%.2f",a*b);
+        break;
+        
+        case '/':
+        printf("Division is :%.2f",a/b);
+        break;
+        
+        case '%':
+        printf("Modulo Division is:%.2f",fmod(a,b));
+        break;
+        
+        default:
+        printf("Invalid Selection");
+    }
+    
+    
+    return 0;
+    
+}
